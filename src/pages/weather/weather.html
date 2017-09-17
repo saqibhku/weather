@@ -18,6 +18,15 @@
 
 <ion-content padding>
 
+  <ion-refresher (ionRefresh)="doRefresh($event)" >
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="pull to refresh"
+      refreshingSpinner="circles"
+      refreshingText="Refreshing...">
+    </ion-refresher-content>
+  </ion-refresher>
+
   <ion-grid *ngIf="daily.data != undefined" >
     
     <ion-row>

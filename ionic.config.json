@@ -4,5 +4,11 @@
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
-  }
+  },
+  "proxies" : [
+    {
+      "path": "/api/forecast",
+      "proxyUrl":"https://api.darksky.net/forecast/fb8a101649297d249b7f06153eafe249"
+    }
+  ]
 }
